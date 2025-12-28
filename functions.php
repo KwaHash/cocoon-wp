@@ -5,3 +5,9 @@ if ( !defined( 'ABSPATH' ) ) exit;
 add_editor_style();
 
 //以下に子テーマ用の関数を書く
+
+// Add 'paged' query var for custom page templates
+add_filter('query_vars', function($vars) {
+    $vars[] = 'paged';
+    return $vars;
+});
