@@ -351,7 +351,7 @@
 																	<?php if (has_post_thumbnail()): ?>
 																		<?php the_post_thumbnail('medium', array('class' => 'c-column-img')); ?>
 																	<?php else: ?>
-																		<img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/imgs/no-image.png'); ?>"
+																		<img src="https://takewaka-legal.com/wordpress/wp-content/uploads/2026/01/noimage.png"
 																			alt="" class="c-column-img">
 																	<?php endif; ?>
 																	<span class="column-date"><?php echo get_the_date('Y.m.d'); ?></span>
