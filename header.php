@@ -24,7 +24,7 @@
   <link rel="canonical" href="http://">
   <link rel="apple-touch-icon-precomposed"
     href="<?php echo esc_url(home_url('/_src/30928/favicon_20240207233952050.png')); ?>">
-  <title>商業登記や相続・債務整理に強い司法書士｜東京・渋谷区「武若司法書士東京事務所」</title>
+  <title><?php wp_title('｜', true, 'right'); ?><?php bloginfo('name'); ?></title>
   <link rel="shortcut icon" href="<?php echo esc_url(home_url('/_src/30927/favicon_(1)_20240207233758268.ico')); ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo esc_url(home_url('/_module/styles/bind.css?v=17.0.5')); ?>"
     id="bind-css">
