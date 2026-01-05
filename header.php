@@ -28,6 +28,7 @@
   <link rel="shortcut icon" href="<?php echo esc_url(home_url('/_src/30927/favicon_(1)_20240207233758268.ico')); ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo esc_url(home_url('/_module/styles/bind.css?v=17.0.5')); ?>"
     id="bind-css">
+  <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri() . '/style.css'); ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/style.css'); ?>">
   <link rel="stylesheet" type="text/css"
     href="<?php echo esc_url(home_url('/_dress/b15009/base.css?1760419919239')); ?>">

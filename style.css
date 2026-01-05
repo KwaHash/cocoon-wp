@@ -16,6 +16,15 @@ Version:    1.1.3
 /*必要ならばここにコードを書く*/
 
 /* ▼ Single/Archive 共通 カラム基本レイアウト */
+
+.toc {
+  display: block !important;
+}
+
+.toc-checkbox {
+  display: none !important;
+}
+
 .g-column.-col2.-sp-col1 {
   max-width: 80% !important;
   margin: 0 auto;
