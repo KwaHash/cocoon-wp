@@ -1,5 +1,31 @@
 <?php get_header(); ?>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('a[href^="#toc"]').forEach(function (link) {
+    link.classList.add('js-link_scroller');
+
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      const targetEl = document.querySelector(targetId);
+
+      if (!targetEl) return;
+
+      e.preventDefault();
+
+      const headerOffset = 0; // 固定ヘッダーがある場合は数値を調整
+      const elementPosition = targetEl.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
+</script>
+
 <?php
 // Determine header based on post category
 $categories = get_the_category();
